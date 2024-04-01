@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  .login-container {
+    margin: 0 auto;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: 23px;
+      text-align: center;
+      font-weight: 600;
+      padding-top: 60px;
+    }
+    .text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+
+      div {
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+    }
+    input {
+      padding: 12px 8px;
+      margin-bottom: 7px;
+      outline: none;
+      background: #f0f0f0;
+      border: #f0f0f0;
+      border-radius: 3px;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #dedede;
+        // border: 1px solid #dedede;
+      }
+    }
+
+    .last-input {
+      position: relative;
+
+      i {
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        cursor: pointer;
+      }
+    }
+
+    .forgot-pass {
+      font-weight: 600;
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 3px;
+      outline: none;
+      border: none;
+
+      &.active {
+        background-color: #e91e63;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+
+    button[disabled=disabled], button:disabled {
+      cursor: not-allowed;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 25px;
+
+      &:hover {
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+}
